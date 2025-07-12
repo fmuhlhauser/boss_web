@@ -1,0 +1,43 @@
+################################################################################
+# INSTRUCCIONES PARA UN NUEVO COMIENZO - LA FORMA MÁS SEGURA
+#
+# Sigue estos pasos uno por uno. Vamos a crear una nueva carpeta limpia
+# y mover tu proyecto allí para evitar cualquier problema de configuración.
+################################################################################
+
+# PASO 1: SALIR DE LA CARPETA ACTUAL
+# Vuelve a la carpeta anterior (tu Escritorio o donde sea que estés).
+cd ..
+
+# PASO 2: CREAR UNA CARPETA COMPLETAMENTE NUEVA PARA EL PROYECTO
+mkdir web-boss-final
+cd web-boss-final
+
+# PASO 3: INICIALIZAR GIT EN LA NUEVA CARPETA (AHORA ESTÁ VACÍA)
+git init -b main
+
+# PASO 4: CONECTAR A GITHUB
+git remote add origin https://github.com/fmuhlhauser/webfinalizada.git
+
+# PASO 5: COPIAR LOS ARCHIVOS DEL PROYECTO ANTIGUO AL NUEVO
+# Abre tu explorador de archivos y copia TODO el contenido de la carpeta
+# "web-lista" a esta nueva carpeta "web-boss-final".
+#
+# IMPORTANTE: Asegúrate de que los archivos ocultos (como .gitignore)
+# también se copien.
+
+# --- UNA VEZ QUE HAYAS COPIADO LOS ARCHIVOS, CONTINÚA EN LA TERMINAL ---
+
+# PASO 6: AÑADIR TODOS LOS ARCHIVOS COPIADOS
+git add .
+
+# PASO 7: CREAR EL PRIMER COMMIT (AHORA SÍ FUNCIONARÁ)
+git commit -m "Initial commit: Proyecto web BOSS Asesorías"
+
+# PASO 8: SUBIR A GITHUB
+git push -u origin main
+
+# Si por alguna razón el push falla con un error de "no relacionado",
+# usa este comando en su lugar:
+# git push -u origin main --allow-unrelated-histories
+################################################################################
